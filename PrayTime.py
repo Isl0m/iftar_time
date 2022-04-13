@@ -447,16 +447,16 @@ def getDiference(time1,time2):
         arr[1] = arr[1][1]
     if(int(arr[0]) == 0):
         word = minCheck(arr[1])
-        data = "{} {}".format(arr[1],word)
+        data = "| ⏰ {} {}".format(arr[1],word)
         return data
     elif(int(arr[1][0]) == 0):
         word = hourCheck(arr[0])
-        data = "{} {}".format(arr[0],word)
+        data = "| ⏰ {} {}".format(arr[0],word)
         return data
     else:
         word1 = hourCheck(arr[0])
         word2 = minCheck(arr[1])
-        data = "{} {} {} {}".format(arr[0],word1,arr[1],word2)
+        data = "| ⏰ {} {} {} {}".format(arr[0],word1,arr[1],word2)
         return data
 
 

@@ -12,7 +12,7 @@ async def main_teletips():
     try:
         while True:
             if app.is_connected:
-                await app.update_profile( last_name = f"| ⏰ {getTime()}")
+                await app.update_profile( last_name = f"{getTime()}")
                 try:
                     print('try')
                 except Exception:
